@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+input[type=checkbox] 
+{
+    visibility: hidden;
+}
+.good
+{
+    width: 140px;
+    height: 40px;
+    margin: left;
+    position:relative;
+}
+.good  div
+{
+    width: 100%;
+    height:100%;
+    background: #d3d3d3;
+    border-radius: 50px;
+    position: relative;
+    top:-20px;
+}
+.good  label
+{
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 40px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    left: 8px;
+    background: #FFF;
+}
+.good  input[type=checkbox]:checked ~ div
+{
+    background: #4fbe79;
+}
+.good  input[type=checkbox]:checked ~ label 
+{
+    left: 85px;
+}
+.cheap
+{
+    width: 140px;
+    height: 40px;
+    margin: left;
+    position:relative;
+}
+.cheap  div
+{
+    width: 100%;
+    height:100%;
+    background: #d3d3d3;
+    border-radius: 50px;
+    position: relative;
+    top:-20px;
+}
+.cheap  label
+{
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 40px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    left: 8px;
+    background: #FFF;
+}
+.cheap  input[type=checkbox]:checked ~ div
+{
+    background: #4fbe79;
+}
+.cheap  input[type=checkbox]:checked ~ label 
+{
+    left: 85px;
+}
+.fast
+{
+    width: 140px;
+    height: 40px;
+    margin: left;
+    position:relative;
+}
+.fast div
+{
+    width: 100%;
+    height:100%;
+    background: #d3d3d3;
+    border-radius: 50px;
+    position: relative;
+    top:-20px;
+}
+.fast  label
+{
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 40px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    left: 8px;
+    background: #FFF;
+}
+.fast  input[type=checkbox]:checked ~ div
+{
+    background: #4fbe79;
+}
+.fast  input[type=checkbox]:checked ~ label 
+{
+    left: 85px;
+}
+    </style>
+</head>
+<body style="text-align: center;">
+    <div class="good">
+        <input type="checkbox" name="" id="good" value="1" onclick="checkboxgood()">
+        <label for="good"> Good</label>
+        <div></div>
+      </div>
+      <div class="cheap">
+        <input type="checkbox" name="" id="cheap" value="1" onclick="checkboxcheap()">
+        <label for="cheap">Cheap</label>
+        <div></div>
+      </div>
+      <div class="fast">
+        <input type="checkbox" name="" id="fast" value="1" onclick="checkboxfast()">
+        <label for="fast">Fast</label>
+        <div></div>
+      </div>
+      <script src="my.js"></script>
+</body>
+</html>
